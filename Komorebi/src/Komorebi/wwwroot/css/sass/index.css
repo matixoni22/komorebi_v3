@@ -1,0 +1,16 @@
+.content .container-fluid {
+  padding-right: 0em;
+  padding-left: 0em; }
+
+.content .container-fluid [class^="col-"] {
+  position: absolute; }
+  .content .container-fluid [class^="col-"] img {
+    margin: auto;
+    width: 90%;
+    height: auto; }
+  .content .container-fluid [class^="col-"] .cont {
+    overflow: hidden;
+    border: solid #067214;
+    background-color: #898989;
+    border-radius: 0.3em;
+    text-align: center; }

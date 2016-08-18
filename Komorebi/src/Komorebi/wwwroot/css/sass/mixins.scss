@@ -1,0 +1,12 @@
+﻿
+@mixin button(){
+    border:solid #067214;
+    background-color:#898989;
+    border-radius:0.3em;
+} 
+@mixin padding_zero(){
+    padding-bottom:0em;
+    padding-left:0em;
+    padding-right:0em;
+    padding-top:0em;
+}

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="~/images/Ball.ico" type="image/x-icon" />
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Joti+One&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel='stylesheet' type='text/css' />
+    <!--Styles-->
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet"  href="~/css/sass/index.css" />
+    <link rel="stylesheet" href="~/css/sass/layout_style.css" />
+    <!--Scripts-->
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/content_position.js"></script>
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+        <!--Header-->
+    <div class="page-header text-center">
+        <!--Navigation-->
+        <nav id="nav-left">
+            <div class="nav-item">
+                <h3>Recenzje</h3>
+                <img src="~/images/animelist.png" />
+            </div>
+            <div class="nav-item">
+                <h3>Top anime</h3>
+                <img src="~/images/trophy.png" />
+            </div>
+        </nav>
+        <h1>Komorebi</h1>
+        <nav id="nav-right">
+            <div class="nav-item">
+                <h3>O mnie</h3>
+                <img src="~/images/contact.png" />
+            </div>
+            <div class="nav-item">
+                <h3>Nowości</h3>
+                <img src="~/images/news.png" />
+            </div>
+        </nav>
+    </div>
+        <div class="row">
+            <!--Aside-->
+            <aside>
+                <div class="col-lg-3 col-lg-push-9">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-lg-12">
+                            <div class="slider">
+                                <h1>Slider</h1>
+                                <img src="~/images/placeholder.png" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-12">
+                            <div class="newsroom">
+                                <h1>newsroom</h1>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </aside> 
+            <!-- Content box-->
+            <div class="content">
+                <div class="col-lg-9 col-lg-pull-3">
+                    @RenderBody()
+                </div>
+            </div>  
+        </div>
+
+    <!--Footer-->
+       <footer class="text-center" style="background:grey">
+          <h3">---------------------Footer----------------------</h3"> 
+    </footer>   
+</body>
+</html>
